@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Ilmu Komunikasi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .aspect-w-16 {
+      aspect-ratio: 16/9;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar Biru Modern -->
+  <nav class="fixed w-full z-20 top-0 left-0 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4 px-4">
+      <div class="text-2xl font-bold text-white tracking-wide">Delza Rafa Maysandro</div>
+      <ul class="flex space-x-4 md:space-x-6 text-white font-medium text-sm md:text-base">
+        <li><a href="#home" class="hover:text-yellow-300 transition duration-300">Home</a></li>
+        <li><a href="#pengertian" class="hover:text-yellow-300 transition duration-300">Pengertian</a></li>
+        <li><a href="#contoh" class="hover:text-yellow-300 transition duration-300">Contoh</a></li>
+        <li><a href="#kontak" class="hover:text-yellow-300 transition duration-300">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen flex flex-col justify-center items-center bg-cover bg-center text-white" style="background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c8ac49fe-9b9c-4346-a4d6-50e785f736b2.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center px-4" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">Mengenal Ilmu Komunikasi</h1>
+      <a href="#pengertian" class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">Pelajari Lebih Lanjut</a>
+    </div>
+  </section>
+
+  <!-- Section Pengertian -->
+  <section id="pengertian" class="py-20 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Pengertian Ilmu Komunikasi</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-right">
+        <p class="text-lg leading-relaxed">Ilmu komunikasi adalah studi tentang proses komunikasi antara individu, kelompok, dan masyarakat. Ini mencakup berbagai aspek seperti penyampaian pesan, media, dan dampak komunikasi.</p>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/15df143e-cb4d-40e5-80c8-cc9e29211e8f.png" alt="Ilustrasi konsep ilmu komunikasi modern" class="rounded-xl shadow-lg hover:scale-105 transition transform duration-300" data-aos="fade-left" />
+    </div>
+  </section>
+
+  <!-- Section Contoh Video Ilmu Komunikasi -->
+  <section id="contoh" class="py-20 bg-gray-50 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contoh Video Ilmu Komunikasi</h2>
+    <div class="container mx-auto flex justify-center px-4 sm:px-6 lg:px-8">
+      <div class="relative w-full max-w-3xl aspect-w-16 aspect-h-9" data-aos="zoom-in">
+        <iframe
+          class="w-full h-full rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/If0FjFbR1VE"
+          title="Contoh Video Ilmu Komunikasi"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Tentang Pembuat -->
+  <section class="py-20 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Tentang Pembuat Website</h2>
+    <div class="flex flex-col items-center text-center px-4" data-aos="fade-up">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/235fa958-bc46-464a-8b0a-193b0cccd959.png" alt="Foto Profil Pembuat Website" class="w-32 h-32 rounded-full shadow-md hover:scale-110 transition duration-300 mb-4">
+      <p class="text-xl font-semibold">Nama Pembuat: <span class="text-blue-600">Delza Rafa Maysandro</span></p>
+      <p class="text-gray-600">Mahasiswa Ilmu Komunikasi</p>
+    </div>
+  </section>
+
+  <!-- Form Kontak -->
+  <section id="kontak" class="py-20 bg-gray-50 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Kontak</h2>
+    <form class="bg-white shadow-xl p-8 rounded-2xl max-w-lg mx-auto space-y-4" data-aos="fade-up">
+      <input type="text" placeholder="Nama" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      <textarea placeholder="Pesan" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-sm">&copy; <span id="current-year"></span> Portofolio Ilmu Komunikasi. Semua hak dilindungi.</p>
+    <div class="mt-3 flex justify-center space-x-6 text-gray-400">
+      <a href="#" class="hover:text-blue-400">Facebook</a>
+      <a href="#" class="hover:text-blue-400">Twitter</a>
+      <a href="#" class="hover:text-blue-400">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
